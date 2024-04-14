@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var anoNascimento = parseInt(prompt("Digite o ano de nascimento:"));
+        var anoAtual = 2024
+        var idade = anoAtual - anoNascimento;
+
+        if (idade >= 16) {
+            alert(`Você tem ${idade} anos de idade, então pode votar este ano!`);
+        } else {
+            alert("Você ainda não pode votar este ano. Aguarde até completar 16 anos.");
+        }
+    </script>
+</body>
+</html>

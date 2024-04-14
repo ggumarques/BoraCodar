@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verificação de Número</title>
+</head>
+<body>
+    Digite um número: <input id="numero" type="number">
+    <button onclick="verificarNumero()">Verificar</button>
+
+    <script type="text/javascript">
+        function verificarNumero() {
+            var num = parseFloat(document.getElementById("numero").value);
+
+            if (num > 0) {
+                alert(num + " é positivo.");
+            } else if (num < 0) {
+                alert(num + " é negativo.");
+            } else {
+                alert("O número é zero.");
+            }
+        }
+    </script>
+</body>
+</html>

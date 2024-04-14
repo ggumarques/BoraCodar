@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comparação de Números</title>
+</head>
+<body>
+    Digite o primeiro número: <input id="numero1" type="number"><br>
+    Digite o segundo número: <input id="numero2" type="number"><br>
+    <button onclick="compararNumeros()">Comparar</button>
+
+    <script type="text/javascript">
+        function compararNumeros() {
+            var num1 = parseFloat(document.getElementById("numero1").value);
+            var num2 = parseFloat(document.getElementById("numero2").value);
+
+            if (num1 === num2) {
+                alert("Números iguais.");
+            } else if (num1 > num2) {
+                alert("Primeiro é maior.");
+            } else {
+                alert("Segundo é maior.");
+            }
+        }
+    </script>
+</body>
+</html>

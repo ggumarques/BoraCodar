@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cálculo da Média</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            width: 30%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Informe dez números:</h2>
+    <input id="numero1" type="number">
+    <input id="numero2" type="number">
+    <input id="numero3" type="number">
+    <input id="numero4" type="number">
+    <input id="numero5" type="number">
+    <input id="numero6" type="number">
+    <input id="numero7" type="number">
+    <input id="numero8" type="number">
+    <input id="numero9" type="number">
+    <input id="numero10" type="number">
+
+    <button onclick="calcularMedia()">Calcular Média</button>
+
+    <script type="text/javascript">
+        function calcularMedia() {
+            var num1 = parseFloat(document.getElementById("numero1").value);
+            var num2 = parseFloat(document.getElementById("numero2").value);
+            var num3 = parseFloat(document.getElementById("numero3").value);
+            var num4 = parseFloat(document.getElementById("numero4").value);
+            var num5 = parseFloat(document.getElementById("numero5").value);
+            var num6 = parseFloat(document.getElementById("numero6").value);
+            var num7 = parseFloat(document.getElementById("numero7").value);
+            var num8 = parseFloat(document.getElementById("numero8").value);
+            var num9 = parseFloat(document.getElementById("numero9").value);
+            var num10 = parseFloat(document.getElementById("numero10").value);
+
+            var soma = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10;
+            var media = soma / 10; 
+            alert("Média aritmética: " + media);
+        }
+    </script>
+</body>
+</html>
